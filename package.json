@@ -1,0 +1,34 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "Personal blog of Krishnanand V P",
+  "author": "Krishnanand V P",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "frontmatter-markdown-loader": "^3.4.3",
+    "highlight": "^0.2.4",
+    "highlight.js": "^10.0.3",
+    "markdown-it": "^11.0.0",
+    "markdown-it-highlight": "^0.2.0",
+    "markdown-it-prism": "^2.0.5",
+    "node-sass": "^4.14.1",
+    "nuxt": "^2.12.2",
+    "sass-loader": "^8.0.2"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.0",
+    "@types/webpack-env": "^1.15.2",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
+}
