@@ -44,6 +44,7 @@ export default {
     text-align: center;
     color: rgb(2, 97, 89);
     padding: 1rem;
+   
     .date {
       color: black;
     }

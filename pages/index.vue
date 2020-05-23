@@ -3,15 +3,17 @@
     
     <div class="about-section">
       <img src="~/assets/images/me.png" />
+      <div>
       <p>
         Hey there you have reached the personal blog of
-        <span class="myname">Krishnanand V P</span> Krishnanand V P a Cs
+        <span class="myname">Krishnanand V P</span>  a Cs
         Undergrad at
         <span class="college"
           ><a href="http://gectcr.ac.in">GEC Thrissur</a></span
-        >, Zealous Tech Enthusiast, Reader and Music Lover.<br />
+        >, Zealous Tech Enthusiast, Reader and Music Lover.
         If you want to learn more about me check out these find me here.
       </p>
+      </div>
     </div>
     <div class="posts">
       <div class="post" v-for="post in posts" :key="post.attributes.title">
@@ -123,5 +125,17 @@ export default {
       }
     }
   }
+}
+@media (min-width: 600px) {
+.about-section {
+  flex-direction: row;
+  text-align: left;
+  font-size: 16px;
+  img{
+    padding: 0;
+    margin: 0 10px 0 0;
+    width: 150px;
+  }
+}
 }
 </style>
