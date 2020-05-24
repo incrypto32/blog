@@ -20,7 +20,9 @@
         <nuxt-link v-bind:to="getPermalink(post)" class="post-title">{{
           post.attributes.title
         }}</nuxt-link>
-        <p>{{ post.attributes.date }}, <span class="read"> 2min Read</span></p>
+        <p>{{ post.attributes.date }},
+           <!-- <span class="read"> 2min Read</span> -->
+           </p>
 
         <p class="tags">
           <span v-for="tag in post.attributes.tags" :key="tag" class="tag"
