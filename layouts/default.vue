@@ -1,30 +1,40 @@
 <template>
-  <div class="main">
-    <div>
-    <div class="navbar">
-      <nuxt-link to="/">Home</nuxt-link>|
-      <nuxt-link to="/about">About</nuxt-link>
-    </div>
-    <nuxt />
-    </div>
-    <div class="footer">
-      {{footer_content}}   
+  <div class="wrapper" v-bind:class="{ dark: darkMode }">
+    <div class="main">
+      <div>
+        <div class="navbar">
+          <nuxt-link to="/">Home</nuxt-link>|
+          <nuxt-link to="/about">About</nuxt-link>
+        </div>
+        <div class="toggle-button">
+          <label class="switch-wrap">
+            <input type="checkbox" v-model="darkMode" />
+            <div class="switch"></div>
+          </label>
+        </div>
+        <nuxt />
+      </div>
+      <div class="footer">
+        {{ footer_content }}
+      </div>
     </div>
   </div>
 </template>
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  data(){
+<script>
+export default {
+  data() {
     return {
-      footer_content :"© 2020, </> with ❤ by Krishnanand using Vue JS,Nuxt Js "
+      darkMode: true,
+      footer_content: '© 2020, </> with ❤️ by Krishnanand using Nuxt Js '
     }
   }
-})
+}
 </script>
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
-
+$darkColors: (
+  'background': #121212
+);
 * {
   margin: 0;
   padding: 0;
@@ -40,17 +50,20 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+}
+.wrapper {
+  width: 100%;
+  // background: #121212;
 }
 .footer {
-   justify-self: flex-start;
-   padding: 2rem;
-  }
+  justify-self: flex-start;
+  padding: 2rem;
+}
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+
   a {
     text-decoration: none;
     color: black;
@@ -65,13 +78,75 @@ html {
   text-align: center;
   letter-spacing: 1px;
 }
+
+.wrapper.dark {
+  background: #1a1919;
+  color: white;
+  .navbar {
+    a {
+      color: white;
+    }
+    .nuxt-link-active {
+      color: #3eaf7c;
+    }
+  }
+}
+
 @media (min-width: 600px) {
-  body {
+  .wrapper {
     display: flex;
     justify-content: center;
+    .main {
+      width: 50%;
+    }
   }
-  #__nuxt {
-    width: 50%;
+}
+
+// Dark Mode Switch
+
+$width: 30px;
+$padding: 2px;
+$height: $width / 2 + $padding;
+.toggle-button {
+  display: flex;
+  justify-content: center;
+}
+.switch-wrap {
+  display: block;
+  cursor: pointer;
+  background: #15273b;
+
+  padding: $padding;
+  width: $width;
+  height: $height;
+  border-radius: $height / 2;
+  input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+.switch {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0fr 1fr 1fr;
+  transition: 0.2s;
+  //ICYMI, pseudo elements are treated as grid items
+  &::after {
+    content: '';
+    border-radius: 50%;
+    background: #ccc;
+    grid-column: 2;
+    transition: background 0.2s;
+  }
+}
+input:checked {
+  + .switch {
+    grid-template-columns: 1fr 1fr 0fr;
+    &::after {
+      background-color: #52cf71;
+    }
   }
 }
 </style>

@@ -17,7 +17,7 @@
     </div>
     <div class="posts">
       <div class="post" v-for="post in posts" :key="post.attributes.title">
-        <nuxt-link v-bind:to="getPermalink(post)">{{
+        <nuxt-link v-bind:to="getPermalink(post)" class="post-title">{{
           post.attributes.title
         }}</nuxt-link>
         <p>{{ post.attributes.date }}, <span class="read"> 2min Read</span></p>
@@ -84,12 +84,12 @@ export default {
     margin: 1rem;
   }
   .myname {
-    color: rgb(245, 51, 2);
+    color: rgb(81, 181, 194);
   }
   .college {
     a {
       text-decoration: none;
-      color: rgb(9, 121, 9);
+      color: rgb(243, 174, 231);
     }
   }
 }
@@ -105,7 +105,7 @@ export default {
   .post {
     padding: 1rem;
     width: 100%;
-    a {
+    .post-title {
       font-size: 22px;
       text-decoration: none;
       font-weight: bold;
@@ -123,6 +123,20 @@ export default {
         background: rgb(85, 202, 105);
         border-radius: 3px;
       }
+    }
+  }
+}
+.wrapper.dark{
+  .post-title{
+    color: rgb(250, 140, 90);
+  }
+  .myname {
+    color: rgb(81, 181, 194);
+  }
+  .college {
+    a {
+      text-decoration: none;
+      color: rgb(243, 174, 231);
     }
   }
 }
