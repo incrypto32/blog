@@ -11,7 +11,7 @@
         <span class="college"
           ><a href="http://gectcr.ac.in">GEC Thrissur</a></span
         >, Zealous Tech Enthusiast, Reader and Music Lover.
-        If you want to learn more about me check out these find me here.
+       
       </p>
       </div>
     </div>

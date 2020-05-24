@@ -149,4 +149,12 @@ input:checked {
     }
   }
 }
+
+code {
+  margin: 1rem;
+  border-radius: .5rem;
+  background:rgb(17, 16, 16);
+  padding:1rem;
+  display: block;
+}
 </style>

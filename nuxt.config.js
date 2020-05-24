@@ -1,8 +1,8 @@
+import Mode from 'frontmatter-markdown-loader/mode'
+var hljs = require('highlight.js')
 const path = require('path')
-import hljs from 'highlight.js'
 const markdownIt = require('markdown-it')
 const markdownItPrism = require('markdown-it-prism')
-import Mode from 'frontmatter-markdown-loader/mode'
 
 export default {
   mode: 'universal',
@@ -20,7 +20,10 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet',  href: '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css' }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -67,11 +70,10 @@ export default {
         include: path.resolve(__dirname, 'content'),
         loader: 'frontmatter-markdown-loader',
         options: {
-          mode: [Mode.VUE_COMPONENT, Mode.META, Mode.HTML],
-          markdownIt: markdownIt({
+          mode: [Mode.VUE_COMPONENT, Mode.META],
+          markdownIt: {
             html: true,
             highlight: function(str, lang) {
-              console.log('HIGHLIGH CALLED')
               if (lang && hljs.getLanguage(lang)) {
                 try {
                   return hljs.highlight(lang, str).value
@@ -80,7 +82,7 @@ export default {
 
               return '' // use external default escaping
             }
-          }).use(markdownItPrism)
+          }
         }
       })
     }
