@@ -23,7 +23,8 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet',  href: '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css' },
-      { rel: 'stylesheet',  href: '/fontello/css/blogicons.css' }
+      { rel: 'stylesheet',  href: '/fontello/css/blogicons.css' },
+      { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap' }
     ]
   },
   /*
