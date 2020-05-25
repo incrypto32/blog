@@ -4,7 +4,7 @@
       <h1>{{ title }}</h1>
       <span class="date">{{ date }}</span>
       <p class="tags">
-        <span v-for="tag in post.attributes.tags" :key="tag" class="tag"
+        <span v-for="tag in tags" :key="tag" class="tag"
           >#{{ tag }}</span
         >
       </p>
@@ -22,6 +22,7 @@ export default {
       console.log(post.html)
       return {
         post:post,
+        tags:post.attributes.tags,
         title: post.attributes.title,
         date: post.attributes.date,
         singlePostComponent: post.vue.component,

@@ -1,9 +1,11 @@
 import Mode from 'frontmatter-markdown-loader/mode'
 var hljs = require('highlight.js')
 const path = require('path')
-const markdownIt = require('markdown-it')
-const markdownItPrism = require('markdown-it-prism')
+var fs = require('fs')
 
+
+var contentDir = path.join(__dirname, '/content/posts')
+var contentFiles = fs.readdirSync(contentDir)
 export default {
   mode: 'universal',
   /*
@@ -53,6 +55,16 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv'
   ],
+  generate:{
+    routes() {
+      return contentFiles.map(filename => {
+      return {
+        route: `/posts/${path.basename(filename, '.md')}`,
+        payload: fs.readFileSync(path.join(contentDir, filename))
+      }
+    })
+  },
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
