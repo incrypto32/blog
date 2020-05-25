@@ -3,7 +3,6 @@ var hljs = require('highlight.js')
 const path = require('path')
 var fs = require('fs')
 
-
 var contentDir = path.join(__dirname, '/content/posts')
 var contentFiles = fs.readdirSync(contentDir)
 export default {
@@ -24,9 +23,17 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet',  href: '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css' },
-      { rel: 'stylesheet',  href: '/fontello/css/blogicons.css' },
-      { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap' }
+      {
+        rel: 'stylesheet',
+        href:
+          '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css'
+      },
+      { rel: 'stylesheet', href: '/fontello/css/blogicons.css' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap'
+      }
     ]
   },
   /*
@@ -55,15 +62,15 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv'
   ],
-  generate:{
+  generate: {
     routes() {
       return contentFiles.map(filename => {
-      return {
-        route: `/posts/${path.basename(filename, '.md')}`,
-        payload: fs.readFileSync(path.join(contentDir, filename))
-      }
-    })
-  },
+        return {
+          route: `/posts/${path.basename(filename, '.md')}`,
+          payload: fs.readFileSync(path.join(contentDir, filename))
+        }
+      })
+    }
   },
   /*
    ** Axios module configuration

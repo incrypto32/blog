@@ -12,8 +12,7 @@
 </template>
 
 <style lang="scss" scoped>
-.about-page {
-    
+.about-page {  
   padding: 2rem;
 //   border: 2px white solid;
   display: flex;
