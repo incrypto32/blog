@@ -2,7 +2,7 @@
   <div>
     
     <div class="about-section">
-      <img src="/assets/images/me.png" />
+      <img src="assets/images/me.png" />
       <div>
       <p>
         Hey there you have reached the personal blog of
