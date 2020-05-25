@@ -54,7 +54,7 @@ export default {
       .tag {
         margin: 0px 5px;
         padding: 1px;
-        background: rgb(85, 202, 105);
+        background: rgb(174, 235, 184);
         border-radius: 3px;
       }
     }
@@ -63,6 +63,19 @@ export default {
   .content {
     margin-top: 2rem;
     text-align: left;
+  }
+}
+.wrapper.dark {
+  .post-page{
+    .heading{
+      color:rgb(255, 119, 119);
+    }
+    .date {
+      color:white;
+    }
+    .tag{
+      color:black;
+    }
   }
 }
 </style>

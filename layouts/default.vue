@@ -70,7 +70,7 @@ html {
     padding: 1rem;
     font-weight: 600;
   }
-  .nuxt-link-active {
+  .nuxt-linkexact-active {
     color: green;
   }
 }
@@ -80,13 +80,13 @@ html {
 }
 
 .wrapper.dark {
-  background: #1a1919;
+  background: #0d030f;
   color: white;
   .navbar {
     a {
       color: white;
     }
-    .nuxt-link-active {
+    .nuxt-link-exact-active {
       color: #3eaf7c;
     }
   }
@@ -151,6 +151,7 @@ input:checked {
 }
 
 code {
+  color:white;
   margin: 1rem;
   border-radius: .5rem;
   background:rgb(17, 16, 16);

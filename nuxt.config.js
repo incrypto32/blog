@@ -22,7 +22,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet',  href: '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css' }
+      { rel: 'stylesheet',  href: '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css' },
+      { rel: 'stylesheet',  href: '/fontello/css/blogicons.css' }
     ]
   },
   /*
