@@ -4,7 +4,7 @@
       <div>
         <div class="navbar">
           <nuxt-link to="/">Home</nuxt-link>|
-          <nuxt-link to="about">About</nuxt-link>
+          <nuxt-link to="/about">About</nuxt-link>
         </div>
         <div class="toggle-button">
           <label class="switch-wrap">
