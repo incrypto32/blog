@@ -4,33 +4,30 @@
       <h1>{{ title }}</h1>
       <span class="date">{{ date }}</span>
       <p class="tags">
-        <span v-for="tag in tags" :key="tag" class="tag"
-          >#{{ tag }}</span
-        >
+        <span v-for="tag in tags" :key="tag" class="tag">#{{ tag }}</span>
       </p>
     </div>
 
-    <div class="content"><component :is="singlePostComponent" /></div>
+    <div class="content" v-html="singlePostComponent"></div>
   </div>
 </template>
 <script>
 export default {
   async asyncData({ params }) {
+    console.log('asyncDataCalled')
     try {
       console.info(params.slug)
-      let post = await import(`~/content/${params.slug}.md`)
-      console.log(post.html)
+      let post = await import(`~/content/posts/${params.slug}.md`)
+
       return {
-        post:post,
-        tags:post.attributes.tags,
+        post: post,
+        tags: post.attributes.tags,
         title: post.attributes.title,
         date: post.attributes.date,
-        singlePostComponent: post.vue.component,
-        htmlP: post.html
+        singlePostComponent: post.html
       }
-    } catch (err) {
-      console.debug(err)
-      return false
+    } catch (e) {
+      error({ statusCode: 404, message: 'Post not found' })
     }
   }
 }
@@ -45,7 +42,7 @@ export default {
     text-align: center;
     color: rgb(2, 97, 89);
     padding: 1rem;
-   
+
     .date {
       color: black;
     }
@@ -67,15 +64,15 @@ export default {
   }
 }
 .wrapper.dark {
-  .post-page{
-    .heading{
-      color:rgb(255, 119, 119);
+  .post-page {
+    .heading {
+      color: rgb(255, 119, 119);
     }
     .date {
-      color:white;
+      color: white;
     }
-    .tag{
-      color:black;
+    .tag {
+      color: black;
     }
   }
 }

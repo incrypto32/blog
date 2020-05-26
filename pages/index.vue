@@ -39,8 +39,7 @@ import Vue from 'vue'
 
 export default {
   async asyncData() {
-    const resolve = require.context('~/content/', true, /\.md$/)
-
+    const resolve = require.context('~/content/posts', true, /\.md$/)
     const imports = resolve.keys().map(fileName => {
       const [, name] = fileName.match(/\/(.+)\.md$/)
       return resolve(fileName)

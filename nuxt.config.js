@@ -65,6 +65,7 @@ export default {
   generate: {
     routes() {
       return contentFiles.map(filename => {
+        
         return {
           route: `/posts/${path.basename(filename, '.md')}`,
           payload: fs.readFileSync(path.join(contentDir, filename))
@@ -91,7 +92,7 @@ export default {
         include: path.resolve(__dirname, 'content'),
         loader: 'frontmatter-markdown-loader',
         options: {
-          mode: [Mode.VUE_COMPONENT, Mode.META],
+          mode: [Mode.VUE_COMPONENT, Mode.META,Mode.HTML],
           markdownIt: {
             html: true,
             highlight: function(str, lang) {
