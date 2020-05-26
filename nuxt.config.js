@@ -5,6 +5,12 @@ var fs = require('fs')
 
 var contentDir = path.join(__dirname, '/content/posts')
 var contentFiles = fs.readdirSync(contentDir)
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/blog/'
+  }
+} : {}
+
 export default {
   mode: 'universal',
   /*
@@ -73,9 +79,7 @@ export default {
       })
     }
   },
-  router: {
-    base: '/blog/'
-  },
+  ...routerBase,
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
