@@ -73,6 +73,9 @@ export default {
       })
     }
   },
+  router: {
+    base: '/blog/'
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
