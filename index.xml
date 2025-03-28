@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>brain.log</title>
+      <link>https://krishna.dev/blog</link>
+      <description>Last 10 notes on brain.log</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Flashblocks? wth?</title>
+    <link>https://krishna.dev/blog/Flashblocks.wtf</link>
+    <guid>https://krishna.dev/blog/Flashblocks.wtf</guid>
+    <description>I often read blogs of people i know personally, very few people i know write blogs but the ones that do i find it very interesting to read them. So i read this blog from azfuller.</description>
+    <pubDate>Sat, 01 Mar 2025 23:43:00 GMT</pubDate>
+  </item><item>
+    <title>How I Over-Engineered This Blog Instead of Paying $10</title>
+    <link>https://krishna.dev/blog/How-I-Over-Engineered-This-Blog-Instead-of-Paying-$10</link>
+    <guid>https://krishna.dev/blog/How-I-Over-Engineered-This-Blog-Instead-of-Paying-$10</guid>
+    <description>How I Over-Engineered This Blog Instead of Paying $10 Am I too late to the blogging scene? Probably, yes. Who reads blogs these days, huh? I do, and probably a very small set of people like me do.</description>
+    <pubDate>Sat, 22 Feb 2025 19:37:00 GMT</pubDate>
+  </item><item>
+    <title>Hello 👋🏻</title>
+    <link>https://krishna.dev/blog/</link>
+    <guid>https://krishna.dev/blog/</guid>
+    <description>Hi, I’m Krishnanand V P, a very curious human being, software engineer, and an imperfect work in progress. I love writing code, and while I sometimes struggle to keep my curiosity in check, it has mostly worked in my favour.</description>
+    <pubDate>Sat, 22 Feb 2025 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
