@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Fragmented</title>
+      <link>https://krishna.dev/blog</link>
+      <description>Last 10 notes on Fragmented</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Consciousness</title>
+    <link>https://krishna.dev/blog/Random/Consciousness</link>
+    <guid>https://krishna.dev/blog/Random/Consciousness</guid>
+    <description>A topic that im really fascinated about.</description>
+    <pubDate>Wed, 04 Jun 2025 08:01:26 GMT</pubDate>
+  </item><item>
+    <title>How I Over-Engineered This Blog Instead of Paying $10</title>
+    <link>https://krishna.dev/blog/Random/How-I-Over-Engineered-This-Blog-Instead-of-Paying-$10</link>
+    <guid>https://krishna.dev/blog/Random/How-I-Over-Engineered-This-Blog-Instead-of-Paying-$10</guid>
+    <description>How I Over-Engineered This Blog Instead of Paying $10 Am I too late to the blogging scene? Probably, yes.</description>
+    <pubDate>Sat, 22 Feb 2025 19:37:00 GMT</pubDate>
+  </item><item>
+    <title>Hello 👋</title>
+    <link>https://krishna.dev/blog/</link>
+    <guid>https://krishna.dev/blog/</guid>
+    <description>Hi, I’m Krishnanand V P, a very curious human being, software engineer, and an imperfect work in progress.</description>
+    <pubDate>Sat, 22 Feb 2025 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
