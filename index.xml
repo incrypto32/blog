@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Fragmented</title>
+      <link>https://krishna.dev/notes</link>
+      <description>Last 10 notes on Fragmented</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Title</title>
+    <link>https://krishna.dev/notes/Deep-Thoughts/Everything-is-connected</link>
+    <guid>https://krishna.dev/notes/Deep-Thoughts/Everything-is-connected</guid>
+    <description>Sometimes i get this weird feeling that everything is connected, when i start to reason about something it starts to appear very similar to some other idea that i had been thinking about.</description>
+    <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Observing consciousness</title>
+    <link>https://krishna.dev/notes/Deep-Thoughts/Observing-consciousness</link>
+    <guid>https://krishna.dev/notes/Deep-Thoughts/Observing-consciousness</guid>
+    <description>I tried observing consciousness. Maybe that’s the way to understand it better than reading neuroscience books.</description>
+    <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Thoughts on consciousness</title>
+    <link>https://krishna.dev/notes/Deep-Thoughts/Thoughts-on-consciousness</link>
+    <guid>https://krishna.dev/notes/Deep-Thoughts/Thoughts-on-consciousness</guid>
+    <description>This is a topic that I’m very fascinated by.</description>
+    <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>How I Over-Engineered This Blog Instead of Paying $10</title>
+    <link>https://krishna.dev/notes/Random/How-I-Over-Engineered-This-Blog-Instead-of-Paying-$10</link>
+    <guid>https://krishna.dev/notes/Random/How-I-Over-Engineered-This-Blog-Instead-of-Paying-$10</guid>
+    <description>How I Over-Engineered This Blog Instead of Paying $10 Am I too late to the blogging scene? Probably, yes.</description>
+    <pubDate>Sat, 22 Feb 2025 19:37:00 GMT</pubDate>
+  </item><item>
+    <title>Hello 👋</title>
+    <link>https://krishna.dev/notes/</link>
+    <guid>https://krishna.dev/notes/</guid>
+    <description>Welcome to my public notes section! This is where I brain dump ideas, thoughts, and random stuff that crosses my mind.</description>
+    <pubDate>Sat, 22 Feb 2025 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
